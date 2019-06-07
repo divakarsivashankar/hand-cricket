@@ -64,6 +64,8 @@ public class HandController : MonoBehaviour
                 if(game.getIsFirstInnings()){
                     game.setIsFirstInnings(false);
                     game.setTarget(getPlayerScore()+1);
+                    deliveries = 0;
+                    wickets = 0;
                 } else {
                     goToGameOverScreen("game over");
                 }
@@ -73,6 +75,8 @@ public class HandController : MonoBehaviour
                 if(game.getIsFirstInnings()){
                     game.setIsFirstInnings(false);
                     game.setTarget(getBotScore()+1);
+                    deliveries = 0;
+                    wickets = 0;
                 } else {
                     goToGameOverScreen("game over");
                 }
